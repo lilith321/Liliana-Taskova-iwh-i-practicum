@@ -1,0 +1,24 @@
+doctype html
+html 
+    head 
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body    
+        h1 cakes
+        a(href="/update-cobj") Add to this table
+        table
+            tr
+                th #{"Cake"}
+                th #{"Type"}
+                th #{"Size"}
+            each cake in data
+                tr
+                    td #{cake.properties.name} 
+                    td #{cake.properties.type} 
+                    td #{cake.properties.size}
+                    
+
+
+
+            
